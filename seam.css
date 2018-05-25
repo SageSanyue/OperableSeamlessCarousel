@@ -1,0 +1,43 @@
+*{margin:0;padding:0;}
+*{box-sizing: border-box;}
+
+.window{
+  width: 400px;
+  height: 300px;
+  margin: 20px auto;
+  overflow: hidden;
+  
+}
+.images{
+  display: flex;
+ }
+.images > img{
+ flex: none;/*flex-shrink: 0;效果等同，都是让图片不变瘦*/
+}
+#buttons{
+  text-align: center;
+  margin: 15px auto;
+  width: 400px;
+  position: relative;
+}
+#buttons > span{
+  height: 20px;
+  width: 20px;
+  border:1px solid #eee;
+  border-radius: 50%;
+  display: inline-block;
+}
+.highlight{
+  background-color: #aaa;
+}
+
+#previous{
+  position: absolute;
+  top: -2px;
+  left: 54px;
+}
+#next{
+  position: absolute;
+  top: -2px;
+  left: 330px;
+}
